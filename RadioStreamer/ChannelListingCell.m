@@ -17,15 +17,6 @@
     if (self) {
         // Initialization code
         
-        CGRect viewFrame = CGRectMake(0.0, 0.0,
-                                      self.contentView.bounds.size.width,
-                                      self.contentView.bounds.size.height);
-        
-        self.customView = [[[CustomTableViewCellView alloc]
-                            initWithFrame:viewFrame
-                            cell:self] autorelease];
-        
-        [self.contentView addSubview:self.customView];
     }
     return self;
 }

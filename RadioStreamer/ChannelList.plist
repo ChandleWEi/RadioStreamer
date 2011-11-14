@@ -7,24 +7,40 @@
 		<string>Avalon</string>
 		<key>imagePath</key>
 		<string>A.png</string>
+		<key>description</key>
+		<string>Previously Eclectic Heaven</string>
+		<key>url</key>
+		<string>http://localhost/AvalonChannel</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Album Rock</string>
 		<key>imagePath</key>
 		<string>AR.png</string>
+		<key>description</key>
+		<string>60&apos;s &amp; 70&apos;s Rock</string>
+		<key>url</key>
+		<string>http://localhost/AlbumRockChannel</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Cafe Monet</string>
 		<key>imagePath</key>
-		<string>CMsm.png</string>
+		<string>CM.png</string>
+		<key>description</key>
+		<string>Electronica &amp; Ambient</string>
+		<key>url</key>
+		<string>http://localhost/CafeMonetChannel</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>Van the Man</string>
 		<key>imagePath</key>
-		<string>VMsm.png</string>
+		<string>VM.png</string>
+		<key>description</key>
+		<string>Van Morrison 24/7</string>
+		<key>url</key>
+		<string>http://localhost/VanTheManChannel</string>
 	</dict>
 </array>
 </plist>

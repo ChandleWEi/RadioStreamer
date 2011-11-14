@@ -10,7 +10,7 @@
 
 @implementation ChannelInfo
 
-@synthesize name, imagePath, image;
+@synthesize name, image, description, url;
 
 - (id)initWithResource:(NSDictionary *)storage
 {
@@ -21,21 +21,19 @@
         // Custom initialization
         static NSString *kNameLabel = @"name";
         static NSString *kImagePathLabel = @"imagePath";
+        static NSString *kDescription = @"description";
+        static NSString *kUrlPath = @"url";
         
         name = [storage objectForKey:kNameLabel];
         imagePath = [storage objectForKey:kImagePathLabel];
+        description = [storage objectForKey:kDescription];
+        urlPath = [storage objectForKey:kUrlPath];
     }
     
     NSLog(@"Channel Name: %@", name);
     NSLog(@"Image Path: %@", imagePath);
-    
-    /*
-    NSInteger pos = [indexPath row];
-    NSLog(@"Pos: %d", pos);
-    NSDictionary *cc = [self.channelInfo objectAtIndex:pos]; 
-    NSString *cName = [cc objectForKey:@"name"];
-	cell.textLabel.text = cName;
-    */
+    NSLog(@"Channel Description: %@", description);
+    NSLog(@"Channel URL: %@", urlPath);
     
     return self;
 }
@@ -59,6 +57,17 @@
     }
     
     return image;
+}
+
+- (NSURL *)url
+{
+    if (!url) {
+        // create the Url
+        
+        url = [[NSURL alloc] initWithString:urlPath];
+    }
+    
+    return url;
 }
 
 @end

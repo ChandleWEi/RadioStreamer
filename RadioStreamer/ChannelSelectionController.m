@@ -57,6 +57,7 @@
     actionBar.backgroundColor = backgroundColor;
     
     // setup the channelList tableView
+    channelList.rowHeight = 75;     // set the height of UITableViewCell, for the larger image size
     channelList.dataSource = self;
     channelList.delegate = self;
     [channelList reloadData];
@@ -118,7 +119,7 @@
      
     ChannelListingCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellID];
     if (!cell) {
-        cell = [[[ChannelListingCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCellID] autorelease];
+        cell = [[[ChannelListingCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:kCellID] autorelease];
     }
     
     NSInteger pos = [indexPath row];
@@ -128,6 +129,35 @@
     [cell applyChannelInfo:channelInfo];
     
 	return cell;
+}
+
+#pragma mark -
+#pragma mark UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	/*
+	 To conform to the Human Interface Guidelines, selections should not be persistent --
+	 deselect the row after it has been selected.
+	 */
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    /*
+    ItemDetailViewController *detailViewController = 
+    [[[ItemDetailViewController alloc] initForNewItem:NO] autorelease];
+    
+    NSArray *possesssions = [[PossessionStore defaultStore] allPossessions];
+    
+    // give detail view controller a pointer to the possession object in row
+    [detailViewController setPossession:[possesssions objectAtIndex:[indexPath row]]];
+    
+    // push it onto the top of the navigation controller's stack
+    [[self navigationController] pushViewController:detailViewController animated:YES];
+     */
+    
+    // create the StreamPlayerController
+    
+    // pass the channelInfo to the StreamController
+    
 }
 
 #pragma mark -

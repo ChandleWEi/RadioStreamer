@@ -37,14 +37,19 @@
                                                alpha:1.0];
     
     self.backgroundColor = backgroundColor;
-    
     self.accessoryType = UITableViewCellAccessoryNone;
-    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    self.selectionStyle = UITableViewCellSelectionStyleGray;
     
+    // channel image
     self.imageView.image = channelInfo.image;
     
+    // channel name
     self.textLabel.textColor = UIColor.lightGrayColor;
     self.textLabel.text = channelInfo.name;
+    
+    // channel description
+    self.detailTextLabel.textColor = UIColor.lightGrayColor;
+    self.detailTextLabel.text = channelInfo.description;
 }
 
 @end

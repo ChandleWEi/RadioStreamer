@@ -62,7 +62,7 @@
 							<object class="IBUILabel" id="444888060">
 								<reference key="NSNextResponder" ref="627183917"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{216, 35}, {99, 21}}</string>
+								<string key="NSFrame">{{215, 38}, {99, 21}}</string>
 								<reference key="NSSuperview" ref="627183917"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="776935459"/>
@@ -106,7 +106,7 @@
 					<object class="IBUITableView" id="776935459">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{0, 57}, {320, 316}}</string>
+						<string key="NSFrame">{{0, 56}, {320, 320}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="832147064"/>
@@ -165,6 +165,7 @@
 								<string key="NSFrame">{{0, 37}, {320, 49}}</string>
 								<reference key="NSSuperview" ref="832147064"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:541</string>
 								<object class="NSColor" key="IBUIBackgroundColor">
 									<int key="NSColorSpace">2</int>
@@ -237,6 +238,7 @@
 								<string key="NSFrame">{{51, 0}, {233, 43}}</string>
 								<reference key="NSSuperview" ref="623063051"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:328</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -406,8 +408,8 @@
 						<int key="objectID">5</int>
 						<reference key="object" ref="627183917"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="444888060"/>
 							<reference ref="246953073"/>
+							<reference ref="444888060"/>
 						</array>
 						<reference key="parent" ref="191373211"/>
 						<string key="objectName">LogoBanner</string>

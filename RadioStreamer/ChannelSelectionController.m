@@ -9,10 +9,11 @@
 #import "ChannelSelectionController.h"
 #import "ChannelListingCell.h"
 #import "ChannelInfo.h"
+#import "StreamPlayerController.h"
 
 @implementation ChannelSelectionController
 
-@synthesize channelInfo = _channelInfo;
+@synthesize channelInfos = _channelInfos;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,8 +31,8 @@
     [super didReceiveMemoryWarning];
     
     // Release any cached data, images, etc that aren't in use.
-    [_channelInfo release];
-    _channelInfo = nil;
+    [_channelInfos release];
+    _channelInfos = nil;
 }
 
 - (void)dealloc
@@ -71,7 +72,7 @@
 }
 
 #pragma mark -
-#pragma mark View Rotate Settings
+#pragma mark View Events
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
@@ -79,20 +80,28 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    NSLog(@"viewDidAppear");
+    
+    // self.navigationController.navigationBarHidden = TRUE;
+    self.navigationController.toolbarHidden = TRUE;
+}
+
 #pragma mark -
 #pragma mark Properties
 
-- (NSArray *)channelInfo
+- (NSArray *)channelInfos
 {
-    if (!_channelInfo) {
+    if (!_channelInfos) {
         // Path to the plist (in the application bundle)
         NSString *channelListPath = [[NSBundle mainBundle] pathForResource:@"ChannelList" 
                                                                     ofType:@"plist"];
         
-        _channelInfo = [[NSArray alloc] initWithContentsOfFile:channelListPath];
+        _channelInfos = [[NSArray alloc] initWithContentsOfFile:channelListPath];
     }
     
-    return _channelInfo;
+    return _channelInfos;
 }
 
 #pragma mark -
@@ -100,7 +109,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	return [self.channelInfo count];
+	return [self.channelInfos count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView 
@@ -123,7 +132,7 @@
     }
     
     NSInteger pos = [indexPath row];
-    NSDictionary *channelDict = [self.channelInfo objectAtIndex:pos];
+    NSDictionary *channelDict = [self.channelInfos objectAtIndex:pos];
     ChannelInfo *channelInfo = [[ChannelInfo alloc] initWithResource:channelDict];
     
     [cell applyChannelInfo:channelInfo];
@@ -155,9 +164,11 @@
      */
     
     // create the StreamPlayerController
+    StreamPlayerController *streamPlayer = [[StreamPlayerController alloc] 
+                                            initWithChannelInfo:[self.channelInfos objectAtIndex:[indexPath row]]];
     
-    // pass the channelInfo to the StreamController
-    
+    [[self navigationController] pushViewController:streamPlayer animated:YES];
+    [self navigationController].navigationBarHidden = false;
 }
 
 #pragma mark -

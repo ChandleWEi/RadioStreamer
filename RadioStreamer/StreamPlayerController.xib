@@ -51,6 +51,7 @@
 								<string key="NSFrameSize">{320, 49}</string>
 								<reference key="NSSuperview" ref="919900447"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:541</string>
 								<object class="NSColor" key="IBUIBackgroundColor" id="287625686">
 									<int key="NSColorSpace">3</int>
@@ -86,25 +87,6 @@
 							<bytes key="NSRGB">MC4wNzg0MzEzNzUzMiAwLjExNzY0NzA2NjcgMC4yMDAwMDAwMTc5AA</bytes>
 						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-					</object>
-					<object class="IBUIImageView" id="855956098">
-						<reference key="NSNextResponder" ref="712245856"/>
-						<int key="NSvFlags">274</int>
-						<string key="NSFrameSize">{320, 61}</string>
-						<reference key="NSSuperview" ref="712245856"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="513341274"/>
-						<string key="NSReuseIdentifierKey">_NS:567</string>
-						<object class="NSColor" key="IBUIBackgroundColor">
-							<int key="NSColorSpace">2</int>
-							<bytes key="NSRGB">MC4wNjY2NjY2NzAxNCAwLjA5MDE5NjA4MDUxIDAuMTQ5MDE5NjEzOQA</bytes>
-						</object>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">header.master.png</string>
-						</object>
 					</object>
 					<object class="IBUITableView" id="87800079">
 						<reference key="NSNextResponder" ref="712245856"/>
@@ -187,7 +169,7 @@
 				<string key="NSFrameSize">{320, 460}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="855956098"/>
+				<reference key="NSNextKeyView"/>
 				<string key="NSReuseIdentifierKey">_NS:196</string>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">2</int>
@@ -196,7 +178,7 @@
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
 			<object class="IBUITableViewCell" id="777573970">
-				<reference key="NSNextResponder"/>
+				<nil key="NSNextResponder"/>
 				<int key="NSvFlags">292</int>
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="IBUIView" id="409396192">
@@ -208,7 +190,6 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{0, 2}, {320, 41}}</string>
 								<reference key="NSSuperview" ref="409396192"/>
-								<reference key="NSWindow"/>
 								<string key="NSReuseIdentifierKey">_NS:328</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -233,7 +214,6 @@
 						</array>
 						<string key="NSFrameSize">{320, 43}</string>
 						<reference key="NSSuperview" ref="777573970"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="656348265"/>
 						<string key="NSReuseIdentifierKey">_NS:395</string>
 						<reference key="IBUIBackgroundColor" ref="287625686"/>
@@ -245,8 +225,6 @@
 					</object>
 				</array>
 				<string key="NSFrameSize">{320, 44}</string>
-				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="409396192"/>
 				<string key="NSReuseIdentifierKey">_NS:384</string>
 				<object class="NSColor" key="IBUIBackgroundColor">
@@ -292,7 +270,6 @@
 						<reference key="object" ref="712245856"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="919900447"/>
-							<reference ref="855956098"/>
 							<reference ref="87800079"/>
 							<reference ref="779967921"/>
 							<reference ref="513341274"/>
@@ -308,11 +285,6 @@
 						</array>
 						<reference key="parent" ref="712245856"/>
 						<string key="objectName">ShareTabBar</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">8</int>
-						<reference key="object" ref="855956098"/>
-						<reference key="parent" ref="712245856"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">9</int>
@@ -372,7 +344,7 @@
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
-				<string key="-1.CustomClassName">PlayingStreamController</string>
+				<string key="-1.CustomClassName">StreamPlayerController</string>
 				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -386,7 +358,6 @@
 				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="7.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="8.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="9.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
@@ -398,11 +369,11 @@
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
-					<string key="className">PlayingStreamController</string>
+					<string key="className">StreamPlayerController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/PlayingStreamController.h</string>
+						<string key="minorKey">./Classes/StreamPlayerController.h</string>
 					</object>
 				</object>
 			</array>
@@ -411,10 +382,6 @@
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">header.master.png</string>
-			<string key="NS.object.0">{768, 130}</string>
-		</object>
 		<string key="IBCocoaTouchPluginVersion">933</string>
 	</data>
 </archive>

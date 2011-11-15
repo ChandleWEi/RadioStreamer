@@ -6,16 +6,31 @@
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "PlayingStreamController.h"
+#import "StreamPlayerController.h"
+#import "ChannelInfo.h"
 
-@implementation PlayingStreamController
+@implementation StreamPlayerController
 
+/*
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
     }
+    return self;
+}
+*/
+
+- (id)initWithChannelInfo:(ChannelInfo *)cInfo
+{
+    self = [super initWithNibName:nil bundle:nil];
+    if (self) {
+        // Custom initialization
+        
+        
+    }
+    
     return self;
 }
 

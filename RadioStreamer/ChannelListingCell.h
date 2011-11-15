@@ -13,7 +13,10 @@
 {
     IBOutlet UIImageView *channelImage;
     IBOutlet UILabel *channelText;
+    ChannelInfo *channelInfo;
 }
+
+@property (nonatomic, readonly) ChannelInfo *channelInfo;
 
 - (void)applyChannelInfo:(ChannelInfo *)channelInfo;
 

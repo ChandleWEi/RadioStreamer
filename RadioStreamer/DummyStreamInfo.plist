@@ -1,5 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>Avalon</key>
+	<array>
+		<dict>
+			<key>albumImagePath</key>
+			<string>aa.png</string>
+			<key>albumName</key>
+			<string>Cure&apos;s Greatest Hits</string>
+			<key>year</key>
+			<string>1984</string>
+			<key>artist</key>
+			<string>The Cure</string>
+			<key>song</key>
+			<string>Boys Don&apos;t Cry</string>
+			<key>rating</key>
+			<string>4</string>
+		</dict>
+		<dict>
+			<key>albumImagePath</key>
+			<string>aa.png</string>
+			<key>albumName</key>
+			<string>Cure&apos;s Greatest Hits</string>
+			<key>year</key>
+			<string>1984</string>
+			<key>artist</key>
+			<string>The Cure</string>
+			<key>song</key>
+			<string>Boys Don&apos;t Cry</string>
+			<key>rating</key>
+			<string>4</string>
+		</dict>
+	</array>
+	<key>Album Rock</key>
+	<array>
+		<dict>
+			<key>albumImagePath</key>
+			<string>aa.png</string>
+			<key>albumName</key>
+			<string>Cure&apos;s Greatest Hits</string>
+			<key>year</key>
+			<string>1984</string>
+			<key>artist</key>
+			<string>The Cure</string>
+			<key>song</key>
+			<string>Boys Don&apos;t Cry</string>
+			<key>rating</key>
+			<string>4</string>
+		</dict>
+		<dict>
+			<key>albumImagePath</key>
+			<string>aa.png</string>
+			<key>albumName</key>
+			<string>Cure&apos;s Greatest Hits</string>
+			<key>year</key>
+			<string>1984</string>
+			<key>artist</key>
+			<string>The Cure</string>
+			<key>song</key>
+			<string>Boys Don&apos;t Cry</string>
+			<key>rating</key>
+			<string>4</string>
+		</dict>
+	</array>
+	<key>Cafe Monet</key>
+	<array>
+		<dict>
+			<key>albumImagePath</key>
+			<string>aa.png</string>
+			<key>albumName</key>
+			<string>Cure&apos;s Greatest Hits</string>
+			<key>year</key>
+			<string>1984</string>
+			<key>artist</key>
+			<string>The Cure</string>
+			<key>song</key>
+			<string>Boys Don&apos;t Cry</string>
+			<key>rating</key>
+			<string>4</string>
+		</dict>
+	</array>
+	<key>Van the Man</key>
+	<array>
+		<dict>
+			<key>albumImagePath</key>
+			<string>aa.png</string>
+			<key>albumName</key>
+			<string>Cure&apos;s Greatest Hits</string>
+			<key>year</key>
+			<string>1984</string>
+			<key>artist</key>
+			<string>Van Morrison</string>
+			<key>song</key>
+			<string>Boys Don&apos;t Cry</string>
+			<key>rating</key>
+			<string>4</string>
+		</dict>
+		<dict>
+			<key>albumImagePath</key>
+			<string>aa.png</string>
+			<key>albumName</key>
+			<string>Cure&apos;s Greatest Hits</string>
+			<key>year</key>
+			<string>1984</string>
+			<key>artist</key>
+			<string>Van Morrison</string>
+			<key>song</key>
+			<string>Boys Don&apos;t Cry</string>
+			<key>rating</key>
+			<string>4</string>
+		</dict>
+	</array>
+</dict>
 </plist>

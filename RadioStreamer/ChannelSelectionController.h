@@ -15,10 +15,10 @@
     IBOutlet UILabel *nowPlayingText;
     IBOutlet UITabBar *actionBar;
     
-    NSArray *_channelInfo;
+    NSArray *_channelInfos;
     
 }
 
-@property (nonatomic, retain) NSArray *channelInfo;
+@property (nonatomic, retain) NSArray *channelInfos;
 
 @end

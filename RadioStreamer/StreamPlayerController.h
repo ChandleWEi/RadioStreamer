@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ChannelInfo.h"
 
-@interface PlayingStreamController : UIViewController
+@interface StreamPlayerController : UIViewController
+{
+    
+}
+
+- (id)initWithChannelInfo:(ChannelInfo *)channelInfo;
 
 @end

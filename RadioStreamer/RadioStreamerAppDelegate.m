@@ -23,7 +23,8 @@
     UINavigationController *navController = [[UINavigationController alloc] 
                                              initWithRootViewController:channelSelectController];
     
-    navController.navigationBarHidden = TRUE;
+    // navController.navigationBarHidden = TRUE;
+    navController.toolbarHidden = TRUE;
     
     // you can now release the channelSelectController here,
     // UINavigationController will retain it

@@ -10,6 +10,8 @@
 
 @implementation ChannelListingCell
 
+@synthesize channelInfo;
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style 
@@ -29,12 +31,15 @@
     // Configure the view for the selected state
 }
 
-- (void)applyChannelInfo:(ChannelInfo *)channelInfo
+- (void)applyChannelInfo:(ChannelInfo *)cInfo
 {
     UIColor *backgroundColor = [UIColor colorWithRed:BackgroundRed/255 
                                                green:BackgroundGreen/255 
                                                 blue:BackgroundBlue/255 
                                                alpha:1.0];
+    
+    // store channelInfo for use by StreamPlayer later
+    channelInfo = cInfo;
     
     self.backgroundColor = backgroundColor;
     self.accessoryType = UITableViewCellAccessoryNone;

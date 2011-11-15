@@ -28,7 +28,22 @@
     if (self) {
         // Custom initialization
         
+        /*
+        UIBarButtonItem *cancelItem = [[UIBarButtonItem alloc]
+                                       initWithBarButtonSystemItem:UIBarButtonSystemItemCancel 
+                                                            target:self 
+                                                            action:@selector(cancel:)];
         
+        [[self navigationItem] setLeftBarButtonItem:cancelItem];
+        [cancelItem release];
+        */
+        
+        // UINavigationItem *channelListNav = [[UINavigationItem alloc] initWithTitle:@"Channel List"];
+        // UINavigationItem *streamPlayerNav = [[UINavigationItem alloc] initWithTitle:@"Now Playing"];
+        
+        // navBar.items = [[NSArray alloc] initWithObjects:channelListNav, streamPlayerNav, nil];
+        
+        self.navigationController.navigationBar.backItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Channel List" style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
     }
     
     return self;
@@ -57,10 +72,17 @@
     // e.g. self.myOutlet = nil;
 }
 
+#pragma mark - interface operations
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (IBAction)back:(id)sender
+{
+    NSLog(@"Called back on NavBar");
 }
 
 @end

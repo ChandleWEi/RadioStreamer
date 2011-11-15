@@ -84,7 +84,7 @@
 {
     NSLog(@"viewDidAppear");
     
-    // self.navigationController.navigationBarHidden = TRUE;
+    self.navigationController.navigationBarHidden = TRUE;
     self.navigationController.toolbarHidden = TRUE;
 }
 
@@ -150,25 +150,24 @@
 	 */
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    /*
-    ItemDetailViewController *detailViewController = 
-    [[[ItemDetailViewController alloc] initForNewItem:NO] autorelease];
-    
-    NSArray *possesssions = [[PossessionStore defaultStore] allPossessions];
-    
-    // give detail view controller a pointer to the possession object in row
-    [detailViewController setPossession:[possesssions objectAtIndex:[indexPath row]]];
-    
-    // push it onto the top of the navigation controller's stack
-    [[self navigationController] pushViewController:detailViewController animated:YES];
-     */
-    
     // create the StreamPlayerController
     StreamPlayerController *streamPlayer = [[StreamPlayerController alloc] 
                                             initWithChannelInfo:[self.channelInfos objectAtIndex:[indexPath row]]];
     
-    [[self navigationController] pushViewController:streamPlayer animated:YES];
-    [self navigationController].navigationBarHidden = false;
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:streamPlayer];
+    
+    [streamPlayer release];
+    
+    [navController setModalPresentationStyle:UIModalPresentationFormSheet];
+    [navController setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+    navController.navigationBar.barStyle = UIBarStyleBlack;
+    
+    
+    // navController is retained by self when presented
+    [self presentModalViewController:navController animated:YES];
+    
+    [navController release];
+
 }
 
 #pragma mark -

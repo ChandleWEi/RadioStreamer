@@ -18,23 +18,8 @@
     // create a ChannelSelectionController
     ChannelSelectionController *channelSelectController = [[ChannelSelectionController alloc] init];
     
-    // create and instance of a UINavigationController
-    // its stack contains only channelSelectController
-    UINavigationController *navController = [[UINavigationController alloc] 
-                                             initWithRootViewController:channelSelectController];
-    
-    // navController.navigationBarHidden = TRUE;
-    navController.toolbarHidden = TRUE;
-    
-    // you can now release the channelSelectController here,
-    // UINavigationController will retain it
-    [channelSelectController release];
-    
     // place ItemsViewController's table view in the window hierarchy
-    [[self window] setRootViewController:navController];
-    
-    // release the navController here as window will retain it
-    [navController release];    
+    [[self window] setRootViewController:channelSelectController];
     
     [self.window makeKeyAndVisible];
     return YES;

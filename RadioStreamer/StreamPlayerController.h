@@ -11,9 +11,14 @@
 
 @interface StreamPlayerController : UIViewController
 {
-    
+    IBOutlet UIImageView *songArt;
+    IBOutlet UITextView *songInfo;
+    IBOutlet UITableView *playedSongHistory;
 }
 
 - (id)initWithChannelInfo:(ChannelInfo *)channelInfo;
+
+- (IBAction)back:(id)sender;
+
 
 @end

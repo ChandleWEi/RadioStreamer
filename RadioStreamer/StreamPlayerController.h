@@ -9,6 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "ChannelInfo.h"
 
+@class StreamPlayerController;
+
+@protocol StreamPlayerControllerDelegate <NSObject>
+
+@optional
+
+- (void)StreamPlayerControllerWillDismiss:(StreamPlayerController *)vc;
+
+@end
+
 @interface StreamPlayerController : UIViewController
 {
     IBOutlet UIImageView *songArt;
@@ -16,9 +26,10 @@
     IBOutlet UITableView *playedSongHistory;
 }
 
+@property (nonatomic, assign) id<StreamPlayerControllerDelegate> delegate;
+
 - (id)initWithChannelInfo:(ChannelInfo *)channelInfo;
 
 - (IBAction)back:(id)sender;
-
 
 @end

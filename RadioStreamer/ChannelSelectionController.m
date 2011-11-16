@@ -156,18 +156,31 @@
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:streamPlayer];
     
+    streamPlayer.delegate = self;
+    
     [streamPlayer release];
     
     [navController setModalPresentationStyle:UIModalPresentationFormSheet];
     [navController setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
     navController.navigationBar.barStyle = UIBarStyleBlack;
     
-    
     // navController is retained by self when presented
     [self presentModalViewController:navController animated:YES];
     
     [navController release];
 
+}
+
+#pragma mark -
+#pragma mark UITableViewDelegate
+
+- (void)StreamPlayerControllerWillDismiss:(StreamPlayerController *)vc
+{
+    NSLog(@"Recieved Dismiss Modal from StreamPlayer");
+    
+    // update the current stream playing status if needed
+    
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 #pragma mark -

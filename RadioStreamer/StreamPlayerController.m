@@ -11,39 +11,19 @@
 
 @implementation StreamPlayerController
 
-/*
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
+@synthesize delegate;
 
 - (id)initWithChannelInfo:(ChannelInfo *)cInfo
 {
     self = [super initWithNibName:nil bundle:nil];
+    
     if (self) {
         // Custom initialization
+        UIBarButtonItem *back2ChannelList = [[UIBarButtonItem alloc] initWithTitle:@"ChannelList" style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
         
-        /*
-        UIBarButtonItem *cancelItem = [[UIBarButtonItem alloc]
-                                       initWithBarButtonSystemItem:UIBarButtonSystemItemCancel 
-                                                            target:self 
-                                                            action:@selector(cancel:)];
+        [[self navigationItem] setLeftBarButtonItem:back2ChannelList];
         
-        [[self navigationItem] setLeftBarButtonItem:cancelItem];
-        [cancelItem release];
-        */
-        
-        // UINavigationItem *channelListNav = [[UINavigationItem alloc] initWithTitle:@"Channel List"];
-        // UINavigationItem *streamPlayerNav = [[UINavigationItem alloc] initWithTitle:@"Now Playing"];
-        
-        // navBar.items = [[NSArray alloc] initWithObjects:channelListNav, streamPlayerNav, nil];
-        
-        self.navigationController.navigationBar.backItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Channel List" style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
+        [back2ChannelList release];
     }
     
     return self;
@@ -83,6 +63,10 @@
 - (IBAction)back:(id)sender
 {
     NSLog(@"Called back on NavBar");
+    
+    if([delegate respondsToSelector:@selector(StreamPlayerControllerWillDismiss:)]) {
+        [delegate StreamPlayerControllerWillDismiss:self];
+    }
 }
 
 @end

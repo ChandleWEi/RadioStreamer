@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StreamPlayerController.h"
 
-@interface ChannelSelectionController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface ChannelSelectionController : UIViewController <UITableViewDataSource, UITableViewDelegate,
+                                                    StreamPlayerControllerDelegate>
 {
     IBOutlet UILabel *streamInfoText;
     IBOutlet UITableView *channelList;

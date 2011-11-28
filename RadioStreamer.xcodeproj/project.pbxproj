@@ -7,17 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AFD9BA4E145E5101006884AA /* A.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BA45145E5101006884AA /* A.png */; };
-		AFD9BA4F145E5101006884AA /* AR.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BA46145E5101006884AA /* AR.png */; };
-		AFD9BA50145E5101006884AA /* ARsm.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BA47145E5101006884AA /* ARsm.png */; };
-		AFD9BA51145E5101006884AA /* Asm.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BA48145E5101006884AA /* Asm.png */; };
-		AFD9BA52145E5101006884AA /* CM.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BA49145E5101006884AA /* CM.png */; };
-		AFD9BA53145E5101006884AA /* CMsm.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BA4A145E5101006884AA /* CMsm.png */; };
-		AFD9BA54145E5101006884AA /* header.master.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BA4B145E5101006884AA /* header.master.png */; };
-		AFD9BA55145E5101006884AA /* VM.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BA4C145E5101006884AA /* VM.png */; };
-		AFD9BA56145E5101006884AA /* VMsm.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BA4D145E5101006884AA /* VMsm.png */; };
-		AFD9BA65145FB80E006884AA /* PlayingStream.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BA64145FB80E006884AA /* PlayingStream.xib */; };
-		AFD9BA68145FB859006884AA /* ChannelSelection.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BA67145FB859006884AA /* ChannelSelection.xib */; };
+		AF40A1E21470B11100EDC731 /* DummyStreamInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF40A1E11470B11100EDC731 /* DummyStreamInfo.plist */; };
+		AFD9BA6C145FBAA2006884AA /* ChannelSelectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD9BA6A145FBAA2006884AA /* ChannelSelectionController.m */; };
+		AFD9BA6D145FBAA2006884AA /* ChannelSelectionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BA6B145FBAA2006884AA /* ChannelSelectionController.xib */; };
+		AFD9BA71145FBB71006884AA /* StreamPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD9BA6F145FBB71006884AA /* StreamPlayerController.m */; };
+		AFD9BA72145FBB71006884AA /* StreamPlayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BA70145FBB71006884AA /* StreamPlayerController.xib */; };
+		AFD9BA821465D383006884AA /* ChannelListingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD9BA811465D383006884AA /* ChannelListingCell.m */; };
+		AFD9BA8A14686939006884AA /* ChannelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD9BA8914686939006884AA /* ChannelInfo.m */; };
+		AFD9BAE2146A5F89006884AA /* ChannelList.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BACD146A5F89006884AA /* ChannelList.plist */; };
+		AFD9BAE3146A5F89006884AA /* A.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BACF146A5F89006884AA /* A.png */; };
+		AFD9BAE4146A5F89006884AA /* AR.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BAD0146A5F89006884AA /* AR.png */; };
+		AFD9BAE5146A5F89006884AA /* ARsm.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BAD1146A5F89006884AA /* ARsm.png */; };
+		AFD9BAE6146A5F89006884AA /* Asm.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BAD2146A5F89006884AA /* Asm.png */; };
+		AFD9BAE7146A5F89006884AA /* CM.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BAD3146A5F89006884AA /* CM.png */; };
+		AFD9BAE8146A5F89006884AA /* CMsm.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BAD4146A5F89006884AA /* CMsm.png */; };
+		AFD9BAE9146A5F89006884AA /* header.master.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BAD5146A5F89006884AA /* header.master.png */; };
+		AFD9BAEA146A5F89006884AA /* VM.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BAD6146A5F89006884AA /* VM.png */; };
+		AFD9BAEB146A5F89006884AA /* VMsm.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BAD7146A5F89006884AA /* VMsm.png */; };
+		AFD9BAEC146A5F89006884AA /* header.copy.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BAD9146A5F89006884AA /* header.copy.png */; };
+		AFD9BAED146A5F89006884AA /* header.ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BADA146A5F89006884AA /* header.ipad.png */; };
+		AFD9BAEE146A5F89006884AA /* header.iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BADB146A5F89006884AA /* header.iphone.png */; };
+		AFD9BAEF146A5F89006884AA /* header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BADC146A5F89006884AA /* header.jpg */; };
+		AFD9BAF0146A5F89006884AA /* header.large.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BADD146A5F89006884AA /* header.large.png */; };
+		AFD9BAF1146A5F89006884AA /* header.master.pxm in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BADE146A5F89006884AA /* header.master.pxm */; };
+		AFD9BAF2146A5F89006884AA /* LifeJive.Name.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BADF146A5F89006884AA /* LifeJive.Name.png */; };
+		AFD9BAF3146A5F89006884AA /* logo_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BAE0146A5F89006884AA /* logo_blue.png */; };
+		AFD9BAF4146A5F89006884AA /* logo_blue.pxm in Resources */ = {isa = PBXBuildFile; fileRef = AFD9BAE1146A5F89006884AA /* logo_blue.pxm */; };
+		AFD9BAF9146BACB0006884AA /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD9BAF8146BACB0006884AA /* Constants.m */; };
 		AFF7B4491448DCFF00606BF9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF7B4481448DCFF00606BF9 /* UIKit.framework */; };
 		AFF7B44B1448DCFF00606BF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF7B44A1448DCFF00606BF9 /* Foundation.framework */; };
 		AFF7B44D1448DCFF00606BF9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF7B44C1448DCFF00606BF9 /* CoreGraphics.framework */; };
@@ -28,17 +44,38 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AFD9BA45145E5101006884AA /* A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = A.png; path = RadioStreamer/images/A.png; sourceTree = "<group>"; };
-		AFD9BA46145E5101006884AA /* AR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AR.png; path = RadioStreamer/images/AR.png; sourceTree = "<group>"; };
-		AFD9BA47145E5101006884AA /* ARsm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ARsm.png; path = RadioStreamer/images/ARsm.png; sourceTree = "<group>"; };
-		AFD9BA48145E5101006884AA /* Asm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Asm.png; path = RadioStreamer/images/Asm.png; sourceTree = "<group>"; };
-		AFD9BA49145E5101006884AA /* CM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CM.png; path = RadioStreamer/images/CM.png; sourceTree = "<group>"; };
-		AFD9BA4A145E5101006884AA /* CMsm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CMsm.png; path = RadioStreamer/images/CMsm.png; sourceTree = "<group>"; };
-		AFD9BA4B145E5101006884AA /* header.master.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = header.master.png; path = RadioStreamer/images/header.master.png; sourceTree = "<group>"; };
-		AFD9BA4C145E5101006884AA /* VM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VM.png; path = RadioStreamer/images/VM.png; sourceTree = "<group>"; };
-		AFD9BA4D145E5101006884AA /* VMsm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VMsm.png; path = RadioStreamer/images/VMsm.png; sourceTree = "<group>"; };
-		AFD9BA64145FB80E006884AA /* PlayingStream.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayingStream.xib; sourceTree = "<group>"; };
-		AFD9BA67145FB859006884AA /* ChannelSelection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChannelSelection.xib; sourceTree = "<group>"; };
+		AF40A1E11470B11100EDC731 /* DummyStreamInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DummyStreamInfo.plist; sourceTree = "<group>"; };
+		AFD9BA69145FBAA2006884AA /* ChannelSelectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelSelectionController.h; sourceTree = "<group>"; };
+		AFD9BA6A145FBAA2006884AA /* ChannelSelectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelSelectionController.m; sourceTree = "<group>"; };
+		AFD9BA6B145FBAA2006884AA /* ChannelSelectionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChannelSelectionController.xib; sourceTree = "<group>"; };
+		AFD9BA6E145FBB71006884AA /* StreamPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamPlayerController.h; sourceTree = "<group>"; };
+		AFD9BA6F145FBB71006884AA /* StreamPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamPlayerController.m; sourceTree = "<group>"; };
+		AFD9BA70145FBB71006884AA /* StreamPlayerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StreamPlayerController.xib; sourceTree = "<group>"; };
+		AFD9BA801465D383006884AA /* ChannelListingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelListingCell.h; sourceTree = "<group>"; };
+		AFD9BA811465D383006884AA /* ChannelListingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelListingCell.m; sourceTree = "<group>"; };
+		AFD9BA8814686939006884AA /* ChannelInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelInfo.h; sourceTree = "<group>"; };
+		AFD9BA8914686939006884AA /* ChannelInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelInfo.m; sourceTree = "<group>"; };
+		AFD9BACD146A5F89006884AA /* ChannelList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ChannelList.plist; sourceTree = "<group>"; };
+		AFD9BACF146A5F89006884AA /* A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A.png; sourceTree = "<group>"; };
+		AFD9BAD0146A5F89006884AA /* AR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AR.png; sourceTree = "<group>"; };
+		AFD9BAD1146A5F89006884AA /* ARsm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ARsm.png; sourceTree = "<group>"; };
+		AFD9BAD2146A5F89006884AA /* Asm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Asm.png; sourceTree = "<group>"; };
+		AFD9BAD3146A5F89006884AA /* CM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CM.png; sourceTree = "<group>"; };
+		AFD9BAD4146A5F89006884AA /* CMsm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CMsm.png; sourceTree = "<group>"; };
+		AFD9BAD5146A5F89006884AA /* header.master.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.master.png; sourceTree = "<group>"; };
+		AFD9BAD6146A5F89006884AA /* VM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VM.png; sourceTree = "<group>"; };
+		AFD9BAD7146A5F89006884AA /* VMsm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VMsm.png; sourceTree = "<group>"; };
+		AFD9BAD9146A5F89006884AA /* header.copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.copy.png; sourceTree = "<group>"; };
+		AFD9BADA146A5F89006884AA /* header.ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.ipad.png; sourceTree = "<group>"; };
+		AFD9BADB146A5F89006884AA /* header.iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.iphone.png; sourceTree = "<group>"; };
+		AFD9BADC146A5F89006884AA /* header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = header.jpg; sourceTree = "<group>"; };
+		AFD9BADD146A5F89006884AA /* header.large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.large.png; sourceTree = "<group>"; };
+		AFD9BADE146A5F89006884AA /* header.master.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = header.master.pxm; sourceTree = "<group>"; };
+		AFD9BADF146A5F89006884AA /* LifeJive.Name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LifeJive.Name.png; sourceTree = "<group>"; };
+		AFD9BAE0146A5F89006884AA /* logo_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_blue.png; sourceTree = "<group>"; };
+		AFD9BAE1146A5F89006884AA /* logo_blue.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = logo_blue.pxm; sourceTree = "<group>"; };
+		AFD9BAF7146BACB0006884AA /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		AFD9BAF8146BACB0006884AA /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		AFF7B4441448DCFF00606BF9 /* RadioStreamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioStreamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF7B4481448DCFF00606BF9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AFF7B44A1448DCFF00606BF9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,27 +103,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AFD9BA43145E50D0006884AA /* Resources */ = {
+		AFD9BA8414685126006884AA /* ChannelList */ = {
 			isa = PBXGroup;
 			children = (
-				AFD9BA45145E5101006884AA /* A.png */,
-				AFD9BA46145E5101006884AA /* AR.png */,
-				AFD9BA47145E5101006884AA /* ARsm.png */,
-				AFD9BA48145E5101006884AA /* Asm.png */,
-				AFD9BA49145E5101006884AA /* CM.png */,
-				AFD9BA4A145E5101006884AA /* CMsm.png */,
-				AFD9BA4B145E5101006884AA /* header.master.png */,
-				AFD9BA4C145E5101006884AA /* VM.png */,
-				AFD9BA4D145E5101006884AA /* VMsm.png */,
+				AFD9BACD146A5F89006884AA /* ChannelList.plist */,
+				AFD9BA8814686939006884AA /* ChannelInfo.h */,
+				AFD9BA8914686939006884AA /* ChannelInfo.m */,
+				AFD9BA69145FBAA2006884AA /* ChannelSelectionController.h */,
+				AFD9BA6A145FBAA2006884AA /* ChannelSelectionController.m */,
+				AFD9BA6B145FBAA2006884AA /* ChannelSelectionController.xib */,
+				AFD9BA801465D383006884AA /* ChannelListingCell.h */,
+				AFD9BA811465D383006884AA /* ChannelListingCell.m */,
 			);
-			name = Resources;
+			name = ChannelList;
+			sourceTree = "<group>";
+		};
+		AFD9BA8514685163006884AA /* StreamPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9BA6E145FBB71006884AA /* StreamPlayerController.h */,
+				AFD9BA6F145FBB71006884AA /* StreamPlayerController.m */,
+				AFD9BA70145FBB71006884AA /* StreamPlayerController.xib */,
+				AF40A1E11470B11100EDC731 /* DummyStreamInfo.plist */,
+			);
+			name = StreamPlayer;
+			sourceTree = "<group>";
+		};
+		AFD9BACE146A5F89006884AA /* images */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9BACF146A5F89006884AA /* A.png */,
+				AFD9BAD0146A5F89006884AA /* AR.png */,
+				AFD9BAD1146A5F89006884AA /* ARsm.png */,
+				AFD9BAD2146A5F89006884AA /* Asm.png */,
+				AFD9BAD3146A5F89006884AA /* CM.png */,
+				AFD9BAD4146A5F89006884AA /* CMsm.png */,
+				AFD9BAD5146A5F89006884AA /* header.master.png */,
+				AFD9BAD6146A5F89006884AA /* VM.png */,
+				AFD9BAD7146A5F89006884AA /* VMsm.png */,
+				AFD9BAD8146A5F89006884AA /* workArea */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		AFD9BAD8146A5F89006884AA /* workArea */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9BAD9146A5F89006884AA /* header.copy.png */,
+				AFD9BADA146A5F89006884AA /* header.ipad.png */,
+				AFD9BADB146A5F89006884AA /* header.iphone.png */,
+				AFD9BADC146A5F89006884AA /* header.jpg */,
+				AFD9BADD146A5F89006884AA /* header.large.png */,
+				AFD9BADE146A5F89006884AA /* header.master.pxm */,
+				AFD9BADF146A5F89006884AA /* LifeJive.Name.png */,
+				AFD9BAE0146A5F89006884AA /* logo_blue.png */,
+				AFD9BAE1146A5F89006884AA /* logo_blue.pxm */,
+			);
+			path = workArea;
 			sourceTree = "<group>";
 		};
 		AFF7B4391448DCFE00606BF9 = {
 			isa = PBXGroup;
 			children = (
 				AFF7B44E1448DCFF00606BF9 /* RadioStreamer */,
-				AFD9BA43145E50D0006884AA /* Resources */,
 				AFF7B4471448DCFF00606BF9 /* Frameworks */,
 				AFF7B4451448DCFF00606BF9 /* Products */,
 			);
@@ -113,12 +192,13 @@
 		AFF7B44E1448DCFF00606BF9 /* RadioStreamer */ = {
 			isa = PBXGroup;
 			children = (
+				AFD9BA8514685163006884AA /* StreamPlayer */,
+				AFD9BA8414685126006884AA /* ChannelList */,
 				AFF7B4571448DCFF00606BF9 /* RadioStreamerAppDelegate.h */,
 				AFF7B4581448DCFF00606BF9 /* RadioStreamerAppDelegate.m */,
 				AFF7B45A1448DCFF00606BF9 /* MainWindow.xib */,
 				AFF7B44F1448DCFF00606BF9 /* Supporting Files */,
-				AFD9BA64145FB80E006884AA /* PlayingStream.xib */,
-				AFD9BA67145FB859006884AA /* ChannelSelection.xib */,
+				AFD9BACE146A5F89006884AA /* images */,
 			);
 			path = RadioStreamer;
 			sourceTree = "<group>";
@@ -130,6 +210,8 @@
 				AFF7B4511448DCFF00606BF9 /* InfoPlist.strings */,
 				AFF7B4541448DCFF00606BF9 /* main.m */,
 				AFF7B4561448DCFF00606BF9 /* RadioStreamer-Prefix.pch */,
+				AFD9BAF7146BACB0006884AA /* Constants.h */,
+				AFD9BAF8146BACB0006884AA /* Constants.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -159,6 +241,9 @@
 /* Begin PBXProject section */
 		AFF7B43B1448DCFE00606BF9 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = AFF7B43E1448DCFF00606BF9 /* Build configuration list for PBXProject "RadioStreamer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -183,17 +268,28 @@
 			files = (
 				AFF7B4531448DCFF00606BF9 /* InfoPlist.strings in Resources */,
 				AFF7B45C1448DCFF00606BF9 /* MainWindow.xib in Resources */,
-				AFD9BA4E145E5101006884AA /* A.png in Resources */,
-				AFD9BA4F145E5101006884AA /* AR.png in Resources */,
-				AFD9BA50145E5101006884AA /* ARsm.png in Resources */,
-				AFD9BA51145E5101006884AA /* Asm.png in Resources */,
-				AFD9BA52145E5101006884AA /* CM.png in Resources */,
-				AFD9BA53145E5101006884AA /* CMsm.png in Resources */,
-				AFD9BA54145E5101006884AA /* header.master.png in Resources */,
-				AFD9BA55145E5101006884AA /* VM.png in Resources */,
-				AFD9BA56145E5101006884AA /* VMsm.png in Resources */,
-				AFD9BA65145FB80E006884AA /* PlayingStream.xib in Resources */,
-				AFD9BA68145FB859006884AA /* ChannelSelection.xib in Resources */,
+				AFD9BA6D145FBAA2006884AA /* ChannelSelectionController.xib in Resources */,
+				AFD9BA72145FBB71006884AA /* StreamPlayerController.xib in Resources */,
+				AFD9BAE2146A5F89006884AA /* ChannelList.plist in Resources */,
+				AFD9BAE3146A5F89006884AA /* A.png in Resources */,
+				AFD9BAE4146A5F89006884AA /* AR.png in Resources */,
+				AFD9BAE5146A5F89006884AA /* ARsm.png in Resources */,
+				AFD9BAE6146A5F89006884AA /* Asm.png in Resources */,
+				AFD9BAE7146A5F89006884AA /* CM.png in Resources */,
+				AFD9BAE8146A5F89006884AA /* CMsm.png in Resources */,
+				AFD9BAE9146A5F89006884AA /* header.master.png in Resources */,
+				AFD9BAEA146A5F89006884AA /* VM.png in Resources */,
+				AFD9BAEB146A5F89006884AA /* VMsm.png in Resources */,
+				AFD9BAEC146A5F89006884AA /* header.copy.png in Resources */,
+				AFD9BAED146A5F89006884AA /* header.ipad.png in Resources */,
+				AFD9BAEE146A5F89006884AA /* header.iphone.png in Resources */,
+				AFD9BAEF146A5F89006884AA /* header.jpg in Resources */,
+				AFD9BAF0146A5F89006884AA /* header.large.png in Resources */,
+				AFD9BAF1146A5F89006884AA /* header.master.pxm in Resources */,
+				AFD9BAF2146A5F89006884AA /* LifeJive.Name.png in Resources */,
+				AFD9BAF3146A5F89006884AA /* logo_blue.png in Resources */,
+				AFD9BAF4146A5F89006884AA /* logo_blue.pxm in Resources */,
+				AF40A1E21470B11100EDC731 /* DummyStreamInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +302,11 @@
 			files = (
 				AFF7B4551448DCFF00606BF9 /* main.m in Sources */,
 				AFF7B4591448DCFF00606BF9 /* RadioStreamerAppDelegate.m in Sources */,
+				AFD9BA6C145FBAA2006884AA /* ChannelSelectionController.m in Sources */,
+				AFD9BA71145FBB71006884AA /* StreamPlayerController.m in Sources */,
+				AFD9BA821465D383006884AA /* ChannelListingCell.m in Sources */,
+				AFD9BA8A14686939006884AA /* ChannelInfo.m in Sources */,
+				AFD9BAF9146BACB0006884AA /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +380,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RadioStreamer/RadioStreamer-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "RadioStreamer/RadioStreamer-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -290,6 +392,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RadioStreamer/RadioStreamer-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "RadioStreamer/RadioStreamer-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
